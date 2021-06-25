@@ -9,14 +9,21 @@
 
     <!-- css files -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Noto+Serif+TC:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
                 <li>
-                    <a href="/"><img src="logo.jpg" alt="logo image" class="logo-img"></a>
+                    <a href="#hero"><img src="logo.jpg" alt="logo image" class="logo-img"></a>
                 </li>
                 <li>
                     <a href="#services">Services</a>
@@ -47,14 +54,14 @@
         </section>
         <section id="services">
             <div class="container">
-                <h2>
+                <h2 class="services-h2">
                     Services
                 </h2>
                 <div class="card-container">
                     <div class="card">
-                        <h1>
+                        <h3>
                             Washing
-                        </h1>
+                        </h3>
                         <img src="washing.jpg" alt="washing image">
                         <p>
                             We offer cars and two wheelers washing services at the best rates and fastest pace.
@@ -64,9 +71,9 @@
                         </a>
                     </div>
                     <div class="card">
-                        <h1>
+                        <h3>
                             Engine Repair
-                        </h1>
+                        </h3>
                         <img src="washing.jpg" alt="washing image">
                         <p>
                             We offer engine repair services at the best rates and fastest pace.
@@ -76,9 +83,9 @@
                         </a>
                     </div>
                     <div class="card">
-                        <h1>
+                        <h3>
                             AC Check
-                        </h1>
+                        </h3>
                         <img src="washing.jpg" alt="washing image">
                         <p>
                             We offer AC Check services at the best rates and fastest pace.
@@ -88,18 +95,20 @@
                         </a>
                     </div>
                 </div>
-                <a href="/services" class="see-more-btn">
-                    See More
-                </a>
+                <div class="see-more-services">
+                    <a href="/services" class="see-more-btn">
+                        See More
+                    </a>
+                </div>
             </div>
         </section>
         <section id="about">
             <div class="container">
-                <h2>
+                <h2 class="about-h2">
                     About Us
                 </h2>
                 <div class="about-panel">
-                    <img src="workshop-img.jpg" alt="workshop image">
+                    <img src="https://source.unsplash.com/1100x900/?workshop" alt="workshop image">
                     <div class="about-content">
                         <h3>VS Automobiles & Workshop</h3>
                         <p class="about-text">
@@ -116,31 +125,30 @@
                         </p>
                     </div>
                 </div>
-                <a href="/about" class="see-more-btn">
-                    See More
-                </a>
+                <div class="see-more-about">
+                    <a href="/about" class="see-more-btn">
+                        See More
+                    </a>
+                </div>
             </div>
         </section>
         <section id="contact">
             <div class="container">
-                <h2>
+                <h2 class="contact-h2">
                     Contact Us
                 </h2>
                 <div class="contact-panels">
                     <div class="contact-panel">
-                        <!-- contact form here -->
+                        <div class="form-temp"></div>
                     </div>
                     <p class="or-p">
-                        or
+                        OR
                     </p>
                     <div class="contact-panel">
-                        <!-- sontact buttons here -->
+                        <div class="form-temp"></div>
                     </div>
 
                 </div>
-                <a href="/about" class="see-more-btn">
-                    See More
-                </a>
             </div>
         </section>
     </main>
@@ -149,6 +157,7 @@
             <script>var d = new Date(); document.getElementById('copy-date-span').innerText = d.getFullYear();</script>
         </span>VS Automobiles & Workshop, All Rights Reserved.
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
